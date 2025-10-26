@@ -5,19 +5,25 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "cli": "ts-node src/cli.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "dotenv": "^17.2.3",
-    "viem": "^2.38.4"
+    "viem": "^2.38.4",
+    "yargs": "^18.0.0"
   },
   "devDependencies": {
     "@types/node": "^24.9.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
+  },
+  "bin": {
+    "megaeth": "dist/cli.js"
   }
 }
