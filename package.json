@@ -7,19 +7,27 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node src/index.ts",
     "build": "tsc",
-    "cli": "ts-node src/cli.ts"
+    "cli": "ts-node src/cli.ts",
+    "api": "ts-node src/api/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "chalk": "^5.6.2",
     "dotenv": "^17.2.3",
+    "express": "^5.1.0",
     "viem": "^2.38.4",
     "yargs": "^18.0.0"
   },
   "devDependencies": {
+    "@types/express": "^5.0.5",
     "@types/node": "^24.9.1",
+    "@typescript-eslint/eslint-plugin": "^8.46.2",
+    "@typescript-eslint/parser": "^8.46.2",
+    "eslint": "^9.38.0",
+    "prettier": "^3.6.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
